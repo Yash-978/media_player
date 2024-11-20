@@ -95,18 +95,26 @@ class SearchScreen extends StatelessWidget {
         ),
         actions: [
           IconButton(
-            icon: Icon(Icons.search,color: white,),
+            icon: Icon(
+              Icons.search,
+              color: white,
+            ),
             onPressed: () {
               showSearch(context: context, delegate: VideoSearchDelegate());
             },
           ),
-          IconButton(onPressed: () {}, icon: Icon(Icons.cast,color: white)),
+          IconButton(onPressed: () {}, icon: Icon(Icons.cast, color: white)),
           IconButton(
-              onPressed: () {}, icon: Badge(child: Icon(Icons.notifications,color: white))),
+              onPressed: () {},
+              icon: Badge(child: Icon(Icons.notifications, color: white))),
         ],
       ),
       body: Center(
-        child: Text("Search YouTube videos"),
+        child: Text(
+          "Search YouTube videos",
+          style: TextStyle(
+              color: white, fontSize: 18, fontWeight: FontWeight.w500),
+        ),
       ),
     );
   }
@@ -143,7 +151,7 @@ class VideoSearchDelegate extends SearchDelegate {
     return Obx(() {
       if (_controller.isLoading.value) {
         return ListView.builder(
-          itemCount: 8,
+          itemCount: 12,
           itemBuilder: (context, index) {
             return Padding(
               padding:
