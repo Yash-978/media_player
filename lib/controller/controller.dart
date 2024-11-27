@@ -13,10 +13,21 @@ import 'dart:convert';
 
 import '../main.dart';
 
+
+class NavController extends GetxController {
+  // Current index of the bottom navigation bar
+  var selectedIndex = 0.obs;
+
+  // Method to update the index
+  void changeIndex(int index) {
+    selectedIndex.value = index;
+  }
+}
+
 class YouTubeController extends GetxController {
   final String apiKey = "AIzaSyDUj1q4U1E2AxCReqYgyTgB05eyDOilz94";
-  var videos = <dynamic>[].obs; // Observable list for videos
-  var isLoading = false.obs; // Loading state
+  var videos = <dynamic>[].obs;
+  var isLoading = false.obs;
 
 
   Future<void> fetchVideos(String query) async {
@@ -42,18 +53,18 @@ class YouTubeController extends GetxController {
 }
 
 
-class VideoController extends GetxController {
-  var searchQuery = ''.obs;
-  var videoList = <Video>[].obs;
-  var isLoading = false.obs;
-
-  // Fetch videos based on search query
-  Future<void> searchVideos(String query) async {
-    searchQuery.value = query;
-    isLoading.value = true;
-    // Call the YouTube API to search for videos
-    final results = await fetchVideos(query);
-    videoList.value = results;
-    isLoading.value = false;
-  }
-}
+// class VideoController extends GetxController {
+//   var searchQuery = ''.obs;
+//   var videoList = <Video>[].obs;
+//   var isLoading = false.obs;
+//
+//   // Fetch videos based on search query
+//   Future<void> searchVideos(String query) async {
+//     searchQuery.value = query;
+//     isLoading.value = true;
+//     // Call the YouTube API to search for videos
+//     final results = await fetchVideos(query);
+//     videoList.value = results;
+//     isLoading.value = false;
+//   }
+// }

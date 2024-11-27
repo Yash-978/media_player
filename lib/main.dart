@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:media_player/view/screen/bottomNavBar.dart';
 import 'package:media_player/view/screen/home_screen/home.dart';
 import 'package:media_player/view/screen/search_screen/search.dart';
 import 'dart:convert';
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
       getPages: [
         GetPage(
           name: '/',
-          page: () => SearchScreen(),
+          page: () => HomeScreen(),
         ),
       ],
     );
