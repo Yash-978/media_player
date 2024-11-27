@@ -1,17 +1,14 @@
 # media_player
+<div> 
+    <img src = "https://github.com/user-attachments/assets/3cea8594-1bcf-44ec-b06d-f1026c48c664"  height=35% width=25%  />
+    <img src = "https://github.com/user-attachments/assets/94693474-df83-4b45-96e3-f57c150d0e81"  height=35% width=25%  />
+    <img src = "https://github.com/user-attachments/assets/1496fd85-05e7-49b7-8664-57259e297d2f"  height=35% width=25%  />
+    <img src = "https://github.com/user-attachments/assets/79df39bc-d6dd-4388-a6c5-996da4ed6857"  height=35% width=25%  />
+    <img src = "https://github.com/user-attachments/assets/fe73dc56-2592-4970-a74f-4ae35004494f"  height=35% width=25%  />
+    <img src = "https://github.com/user-attachments/assets/df28a798-fbc6-45c3-a3eb-4b9dca3a44bb"  height=35% width=25%  />
 
-A new Flutter project.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-<div align="center"> <a href="https://drive.google.com/file/d/1bwMz2fx03gkzdRMwR_HzV7ShRIpNwlpe/view?usp=drivesdk">👉👉Go to this File👈👈</a></div>
+<div align="center"> <a href="https://drive.google.com/file/d/1bwMz2fx03gkzdRMwR_HzV7ShRIpNwlpe/view?usp=drivesdk">👉👉See Video👈👈</a></div>
