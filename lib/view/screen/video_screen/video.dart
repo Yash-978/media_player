@@ -115,7 +115,21 @@ class VideoPlayerScreen extends StatelessWidget {
                   autoPlay: true,
                   mute: false,
                 ),
+
               ),
+              // bottomActions: [
+              //   CurrentPosition(),
+              //   ProgressBar(isExpanded: true,
+              //   colors: ProgressBarColors(
+              //     playedColor: Colors.red,
+              //     handleColor: white
+              //   ),),
+              //   PlaybackSpeedButton(
+              //     controller: YoutubePlayerController(initialVideoId: videoId),
+              //     icon: Icon(Icons.speed),
+              //   ),
+              //
+              // ],
               showVideoProgressIndicator: true,
             ),
             builder: (context, player) {
@@ -142,7 +156,6 @@ class VideoPlayerScreen extends StatelessWidget {
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-
                         SizedBox(height: 8),
                         Text(
                           "1.2M views • 2 days ago",

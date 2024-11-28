@@ -8,8 +8,6 @@ import '../../../controller/controller.dart';
 import '../../../modal/modal.dart';
 import '../video_screen/video.dart';
 
-
-
 class SearchScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -70,7 +68,6 @@ class VideoSearchDelegate extends SearchDelegate {
       primaryColor: white,
       appBarTheme: AppBarTheme(
         backgroundColor: bgColor,
-
         iconTheme: IconThemeData(color: white), // Icon color
         toolbarTextStyle: TextStyle(color: white, fontSize: 18),
         titleTextStyle: TextStyle(color: white, fontSize: 18),
@@ -218,8 +215,8 @@ class VideoSearchDelegate extends SearchDelegate {
                   ),
                 ),
                 Text(
-                  video.title,
                   style: TextStyle(color: white),
+                  video.title,
                 ),
                 SizedBox(
                   height: h * 0.01,
@@ -227,7 +224,6 @@ class VideoSearchDelegate extends SearchDelegate {
               ],
             ),
           );
-
         },
       );
     });

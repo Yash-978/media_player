@@ -6,7 +6,9 @@
 // import 'package:file_picker/file_picker.dart';
 
 
-
+/*final url =
+        "https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&relatedToVideoId=$videoId&key=$apiKey";
+*/
 import 'package:get/get.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
@@ -24,6 +26,7 @@ class NavController extends GetxController {
   }
 }
 
+
 class YouTubeController extends GetxController {
   final String apiKey = "AIzaSyDUj1q4U1E2AxCReqYgyTgB05eyDOilz94";
   var videos = <dynamic>[].obs;
@@ -37,6 +40,7 @@ class YouTubeController extends GetxController {
         Uri.parse(
           'https://www.googleapis.com/youtube/v3/search?part=snippet&q=$query&type=video&maxResults=10&key=$apiKey',
         ),
+
       );
       if (response.statusCode == 200) {
         final data = json.decode(response.body);
